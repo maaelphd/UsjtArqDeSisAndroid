@@ -1,0 +1,20 @@
+<resources>
+
+    // Activity.Login
+    <string name="app_name">Caixa Eletronico</string>
+    <string name="acc_message">Conta</string>
+    <string name="agency_message">Agência</string>
+    <string name="pass_message">Senha</string>
+    <string name="acess_button">Acessar</string>
+
+    // Activity.Account
+    <string name="activity1_name">Extrato</string>
+    <string name="name_screen">Extrato</string>
+    <string name="sevenDays_button">7 Dias</string>
+    <string name="fifteenDays_button">15 Dias</string>
+    <string name="from_textView">De:</string>
+    <string name="to_textView">Até:</string>
+    <string name="mask_editText">dd/mm/aaaa</string>
+    <string name="consultExtract_button">Consultar</string>
+
+</resources>

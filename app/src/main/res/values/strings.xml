@@ -5,8 +5,7 @@
     <string name="acc_message">Conta</string>
     <string name="agency_message">Agência</string>
     <string name="pass_message">Senha</string>
-    <string name="acess_button">Acessar</string>
-
+    <string name="acess_button">Acessar</string>//kk
     // Activity.Account
     <string name="activity1_name">Extrato</string>
     <string name="name_screen">Extrato</string>

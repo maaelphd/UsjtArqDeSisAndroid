@@ -6,8 +6,12 @@
           <option name="url" value="https://github.com/UsjtArqDeSisAndroid/USJT2016_ArqDeSis_Aula13AndroidIntro" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/UsjtArqDeSisAndroid" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="C:\Users\Maael\Desktop\WorkSpaceAndroid_ProjectCaixa" />
+    <option name="cloneParentDir" value="C:\Users\Maael\AndroidStudioProjects\MeuPrimeiroApp" />
   </component>
 </application>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Dim_Gray"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="project.caixaeletronico.Account">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:context="eletronico.caixa.caixaeletronico.Account">
+
+        // Layout Seven/Fifteen Days
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            tools:context="eletronico.caixa.caixaeletronico.Login">
+
+            <Button
+                android:id="@+id/sevDays_extract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:onClick="extractSevenDays"
+                android:text="@string/sevenDays_button" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="extractFifteenDays"
+                android:text="@string/fifteenDays_button" />
+
+        </LinearLayout>
+
+
+        //Layout Filter date
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:hint="@string/from_textView"
+                    android:textColor="@color/Black"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/from_editTextDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/White"
+                    android:hint="@string/mask_editText"
+                    android:inputType="date"
+                    android:textColor="@color/Black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:hint="@string/to_textView"
+                    android:textColor="@color/Black"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/to_editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/White"
+                    android:hint="@string/mask_editText"
+                    android:inputType="date"
+                    android:textColor="@color/Black" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        //Consult Button
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="consultExtract"
+                android:text="@string/consultExtract_button" />
+
+        </LinearLayout>
+
+        //Extract View
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/extractText_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="4dip"
+                android:typeface="monospace" />
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

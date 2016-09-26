@@ -1,9 +1,9 @@
-package project.caixaeletronico;
+package project.caixaeletronico.to;
 
 /**
  * Created by Maael on 12/09/2016.
  */
-public class Extrato {
+public class ExtratoTO {
 
     private String tipoMovimentacao;
     private int tipo;
@@ -11,7 +11,7 @@ public class Extrato {
     private double saldoAtual;
     private String dataMovimentacao;
 
-    public Extrato(String tipoMovimentacao, int tipo, double valorMovimentacao, double saldoAtual, String dataMovimentacao) {
+    public ExtratoTO(String tipoMovimentacao, int tipo, double valorMovimentacao, double saldoAtual, String dataMovimentacao) {
         this.tipoMovimentacao = tipoMovimentacao;
         this.tipo = tipo;
         this.valorMovimentacao = valorMovimentacao;
@@ -19,7 +19,7 @@ public class Extrato {
         this.dataMovimentacao = dataMovimentacao;
     }
 
-    public Extrato() {
+    public ExtratoTO() {
     }
 
     public String getTipoMovimentacao() {

@@ -6,14 +6,26 @@
     <string name="agency_message">Agência</string>
     <string name="pass_message">Senha</string>
     <string name="acess_button">Acessar</string>
-    // Activity.Account
-    <string name="activity1_name">Extrato</string>
-    <string name="name_screen">Extrato</string>
+
+    // Activity.Extract
+    <string name="account_label">Account</string>
     <string name="sevenDays_button">7 Dias</string>
     <string name="fifteenDays_button">15 Dias</string>
-    <string name="from_textView">De:</string>
-    <string name="to_textView">Até:</string>
-    <string name="mask_editText">dd/mm/aaaa</string>
-    <string name="consultExtract_button">Consultar</string>
+    <string name="another_period">Outro Período</string>
+    <string name="mask_date_editText">dd/mm/aaaa</string>
+    <string name="from_date_textView">De:</string>
+    <string name="to_date_textView">Até:</string>
+    <string name="dateFilter_ok_button">OK</string>
+
+    // Activity.Account
+    <string name="extract_label">Extrato</string>
+    <string name="wellcome_part1_textView">Bem Vindo</string>
+    <string name="wellcome_part2_textView">ao</string>
+    <string name="wellcome_part3_textView">BankLine</string>
+    <string name="withdraw_textView">Saque</string>
+    <string name="transfer_textView">Transferencia</string>
+    <string name="deposit_textView">Depósito</string>
+    <string name="extract_textView">Extrato</string>
+
 
 </resources>

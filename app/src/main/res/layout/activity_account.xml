@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_account"
     android:layout_width="match_parent"
@@ -9,132 +9,141 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="project.caixaeletronico.Account">
+    tools:context=".activitys.Account">
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         tools:context="eletronico.caixa.caixaeletronico.Account">
 
-        // Layout Seven/Fifteen Days
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/wellcome_part1_textView"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
+            android:text="@string/wellcome_part1_textView"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:textColor="@color/Dark_Red" />
+
+        <TextView
+            android:id="@+id/wellcome_part2_textView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wellcome_part2_textView"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:textColor="@color/Dark_Red" />
+
+        <TextView
+            android:id="@+id/wellcome_part3_textView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wellcome_part3_textView"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:textColor="@color/Dark_Red" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
-            tools:context="eletronico.caixa.caixaeletronico.Login">
-
-            <Button
-                android:id="@+id/sevDays_extract"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:onClick="extractSevenDays"
-                android:text="@string/sevenDays_button" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="extractFifteenDays"
-                android:text="@string/fifteenDays_button" />
-
-        </LinearLayout>
-
-
-        //Layout Filter date
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
+            android:layout_marginTop="100dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/withdraw_imgButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/withdraw_button"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"/>
 
                 <TextView
+                    android:id="@+id/withdraw_textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="3dp"
-                    android:hint="@string/from_textView"
-                    android:textColor="@color/Black"
-                    android:textSize="20dp" />
-
-                <EditText
-                    android:id="@+id/from_editTextDate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@color/White"
-                    android:hint="@string/mask_editText"
-                    android:inputType="date"
-                    android:textColor="@color/Black" />
+                    android:text="@string/withdraw_textView"
+                    android:layout_gravity="center"/>
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/transfer_imgButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/transfer_button"
+                    android:layout_gravity="center"/>
 
                 <TextView
+                    android:id="@+id/transfer_textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="3dp"
-                    android:hint="@string/to_textView"
-                    android:textColor="@color/Black"
-                    android:textSize="20dp" />
-
-                <EditText
-                    android:id="@+id/to_editText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@color/White"
-                    android:hint="@string/mask_editText"
-                    android:inputType="date"
-                    android:textColor="@color/Black" />
+                    android:text="@string/transfer_textView"
+                    android:layout_gravity="center"/>
 
             </LinearLayout>
 
-        </LinearLayout>
-
-        //Consult Button
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:orientation="horizontal">
-
-            <Button
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="consultExtract"
-                android:text="@string/consultExtract_button" />
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/deposit_imgButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/deposit_button"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/deposit_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/deposit_textView"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+
+                <ImageButton
+                    android:id="@+id/extract_imgButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/extract_button"
+                    android:layout_gravity="center"
+                    android:onClick="extractActivity"/>
+
+                <TextView
+                    android:id="@+id/extract_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/extract_textView"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
 
         </LinearLayout>
-
-        //Extract View
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="fill_parent">
-
-            <TextView
-                android:id="@+id/extractText_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="4dip"
-                android:typeface="monospace" />
-        </ScrollView>
-
 
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>
